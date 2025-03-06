@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEver - Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="logo.png" alt="ForEver Logo" class="logo">
+        <h2>Welcome Back</h2>
+        
+        <div class="input-box">
+            <i class="demo-user"></i>
+            <input type="text" id="name" placeholder="Enter your first name">
+        </div>
+        <div class="input-box">
+            <i class="demo-user"></i>
+            <input type="text" id="name" placeholder="Enter your second name">
+        </div>
+        <div class="input-box">
+            <i class="demo-envelope"></i>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="input-box">
+            <i class="demo-lock"></i>
+            <input type="password" id="password" placeholder="Enter your password">
+            <p class="error-message" id="password-error">Password must be at least 6 characters!</p>
+        </div>
+        <button class="submit-btn" onclick="validateLogin()">Login</button>
+        <p class="register-link">Don't have an account? <a href="register.html">Sign up</a></p>
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEver - Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="logo.png" alt="ForEver Logo" class="logo">
+        <h2>Create an Account</h2>
+        
+        <div class="input-box">
+            <i class="demo-user"></i>
+            <input type="text" id="signup-name" placeholder="Enter your full name">
+        </div>
+        <div class="input-box">
+            <i class="demo-envelope"></i>
+            <input type="email" id="signup-email" placeholder="Enter your email">
+        </div>
+        <div class="input-box">
+            <i class="demo-lock"></i>
+            <input type="password" id="signup-password" placeholder="Enter your password">
+        </div>
+        <div class="input-box">
+            <i class="demo-lock"></i>
+            <input type="password" id="confirm-password" placeholder="Confirm your password">
+            <p class="error-message" id="signup-password-error">Passwords do not match or are too short!</p>
+        </div>
+        <button class="submit-btn" onclick="validateSignup()">Sign Up</button>
+        <p class="register-link">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

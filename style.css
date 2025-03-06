@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.login-container, .product-container {
+    width: 300px;
+    margin: auto;
+}
+
+.product {
+    display: inline-block;
+    margin: 10px;
+}
+
+.cart-icon {
+    float: right;
+}

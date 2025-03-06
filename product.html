@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEver - Products</title>
+    <link rel="stylesheet" href="product.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="header">
+        <img src="logo.png" alt="ForEver Logo" class="logo">
+        
+        <div class="header-icons">
+            <div class="search-container">
+                <img src="search_icon.png" alt="Search" class="search-icon" onclick="toggleSearch()">
+                <input type="text" id="search-box" placeholder="Search products..." onkeyup="searchProducts()" class="hidden">
+            </div>
+            
+            <div class="cart-container" onclick="goToCart()">
+                <img src="cart_icon.png" alt="Cart" class="cart-icon">
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+    
+        
+        
+    </header>
+
+    <div class="filter">
+        <button onclick="filterProducts('men')">Men</button>
+        <button onclick="filterProducts('women')">Women</button>
+        <button onclick="filterProducts('shoes')">Shoes</button>
+        <button onclick="filterProducts('watches')">Watches</button>
+    </div>
+
+    <div class="product-container" id="product-list">
+       
+    </div>
+    <footer class="footer">
+        <div class="footer-links">
+            <div>
+                <h3>Get to Know Us</h3>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+            </div>
+            <div>
+                <h3>Connect with Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div>
+                <h3>Make Money with Us</h3>
+                <a href="#">Sell on ForEver</a>
+                <a href="#">Advertise Your Products</a>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 ForEver.com - All Rights Reserved</p>
+    </footer>
+    
+
+    <script src="product.js"></script>
+
+</body>
+</html>

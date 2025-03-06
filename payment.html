@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Secure Checkout</title>
+    <link rel="stylesheet" href="payment.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+</head>
+<body>
+
+    <div class="payment-container">
+        <h2>Secure Checkout</h2>
+
+
+        <div class="cart-items" id="cart-items">
+        
+        </div>
+
+     
+        <div class="apply-coupon">
+            <input type="text" id="coupon" placeholder="Enter Coupon Code">
+            <button onclick="applyCoupon()">Apply</button>
+        </div>
+
+
+        <div class="order-summary">
+            <span>Total Amount:</span>
+            <span id="total-price">$0.00</span>
+        </div>
+
+        <div class="payment-methods">
+            <h3>Select Payment Method</h3>
+            <div class="payment-method" onclick="selectPayment('upi')">
+                <input type="radio" name="payment" id="upi"> <label for="upi">UPI / Google Pay / PhonePe</label>
+            </div>
+            <div class="payment-method" onclick="selectPayment('card')">
+                <input type="radio" name="payment" id="card"> <label for="card">Credit / Debit Card</label>
+            </div>
+            <div class="payment-method" onclick="selectPayment('netbanking')">
+                <input type="radio" name="payment" id="netbanking"> <label for="netbanking">Net Banking</label>
+            </div>
+            <div class="payment-method" onclick="selectPayment('cod')">
+                <input type="radio" name="payment" id="cod"> <label for="cod">Cash on Delivery</label>
+            </div>
+        </div>
+
+        <button class="payment-btn" onclick="confirmOrder()">Place Order</button>
+    </div>
+
+    <script src="payment.js">
+       
+    </script>
+
+</body>
+</html>

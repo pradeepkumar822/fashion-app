@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f4f4f4;
+}
+.payment-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+}
+.payment-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cart-items {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.cart-item-info {
+    display: flex;
+    align-items: center;
+}
+.payment-methods {
+    margin-bottom: 20px;
+}
+.payment-method {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background: white;
+}
+.payment-method:hover {
+    background: #f0f0f0;
+}
+.apply-coupon {
+    margin-bottom: 20px;
+}
+.apply-coupon input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.apply-coupon button {
+    padding: 8px;
+    border: none;
+    background: #f50227;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.order-summary {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.payment-btn {
+    width: 100%;
+    padding: 10px;
+    background: #f90328;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.payment-btn:hover {
+    background: #090606;
+}

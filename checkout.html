@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ForEver</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="checkout-wrapper">
+        <div class="checkout-container">
+            <h2>Checkout</h2>
+            <div class="progress-bar">
+                <div class="step active">Cart</div>
+                <div class="step active">Checkout</div>
+                <div class="step">Payment</div>
+                <div class="step">Confirmation</div>
+            </div>
+            <div class="checkout-content">
+                <div class="left-section">
+                    <h3><i class="fas fa-map-marker-alt"></i> Delivery Address</h3>
+                    <div class="input-grid">
+                        <input type="text" id="door" placeholder="Door No">
+                        <input type="text" id="street" placeholder="Street Name">
+                        <input type="text" id="district" placeholder="District">
+                        <input type="text" id="pincode" placeholder="Pincode">
+                        <input type="text" id="ref" placeholder="Reference (Optional)">
+                    </div>
+                </div>
+                <div class="right-section">
+                    <h3><i class="fas fa-shopping-cart"></i> Order Summary</h3>
+                    <div id="cart-items" class="cart-items"></div>
+                    <div class="order-total">Total: <span id="total-price">$0.00</span></div>
+                </div>
+            </div>
+            <button class="proceed-btn" onclick="goToPayment()">Proceed to Payment</button>
+        </div>
+    </div>
+    <script src="checkout.js"></script>
+</body>
+</html>
